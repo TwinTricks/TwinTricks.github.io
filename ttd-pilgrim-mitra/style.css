@@ -1,0 +1,101 @@
+:root {
+  --background: #fdfcf8;
+  --foreground: #1a1a1a;
+  --muted: #4a4a4a;
+  --primary: #7a50dc;
+  --border: #e8e6e1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #141317;
+    --foreground: #f5f4f2;
+    --muted: #a8a5b0;
+    --primary: #9a78e8;
+    --border: #2c2a33;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font:
+    16px/1.6 system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 2rem 0 0.35rem;
+}
+
+p {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+a {
+  color: var(--primary);
+}
+
+.crumb {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.lede,
+.summary {
+  color: var(--foreground);
+}
+
+.summary {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.card {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.card li {
+  margin-bottom: 0.35rem;
+}
+
+.effective,
+.footer {
+  margin-top: 2.5rem;
+  font-size: 0.8125rem;
+}
