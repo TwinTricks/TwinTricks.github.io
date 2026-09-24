@@ -8,55 +8,136 @@
       name="description"
       content="A free Chrome extension that saves pilgrim details on your own device, encrypted, and fills the official TTD booking form when you ask it to."
     />
+    <link rel="icon" href="icon-128.png" />
+    <link rel="canonical" href="https://twintricks.github.io/ttd-pilgrim-mitra/" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="./">
+          <img src="icon-128.png" alt="" width="26" height="26" />
+          TTD Pilgrim Mitra
+        </a>
+        <nav>
+          <a href="support/">Support</a>
+          <a href="privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <h1>TTD Pilgrim Mitra</h1>
+      <p class="eyebrow">Free · Private · On your device</p>
+      <h1>Save your family once. Fill the TTD form in one press.</h1>
       <p class="lede">
-        A free Chrome extension that keeps your family's pilgrim details on your own device,
-        encrypted behind a PIN, and fills the official TTD booking form when you ask it to.
+        A Chrome extension that keeps your family's pilgrim details on your own computer, encrypted
+        behind a PIN, and types them into the official TTD booking form when you ask it to. Nothing
+        is sent anywhere.
       </p>
 
-      <div class="card">
-        <h2>What it does</h2>
-        <ul>
-          <li>Saves name, age, gender, photo ID proof and number for each pilgrim.</li>
-          <li>Fills the pilgrim details step of a TTD darshan, seva or accommodation booking.</li>
-          <li>Groups the people who travel together, so a whole family fills in one press.</li>
-        </ul>
+      <div class="actions">
+        <a
+          class="button"
+          href="https://chromewebstore.google.com/detail/ttd-pilgrim-mitra/npoenlmbhinjpjogcmidbbfgbgojlmkg"
+        >
+          Get it on the Chrome Web Store
+        </a>
+        <a class="button ghost" href="support/">Need help?</a>
+      </div>
+
+      <ul class="chips">
+        <li>No account</li>
+        <li>No analytics</li>
+        <li>No server</li>
+        <li>Free forever</li>
+      </ul>
+
+      <img
+        class="shot"
+        src="screenshot-autofill.png"
+        alt="The extension open beside a TTD booking page, showing a saved group of four pilgrims and an Autofill button."
+        width="1280"
+        height="800"
+        loading="lazy"
+      />
+
+      <p class="section-title">What it does</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3>Save each pilgrim once</h3>
+          <p>Name, age, gender, photo ID proof and number, kept for every trip after this one.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+            </svg>
+          </div>
+          <h3>Fill the whole family</h3>
+          <p>Group the people who travel together and every row on the form fills in one press.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+          </div>
+          <h3>Check its own work</h3>
+          <p>Each field is read back after it is written, and you are told what actually landed.</p>
+        </div>
       </div>
 
       <div class="card">
         <h2>What it never does</h2>
-        <ul>
+        <ul class="marks no">
           <li>Send pilgrim details anywhere. There is no account, no server and no analytics.</li>
-          <li>Enter an OTP, solve a captcha, choose a slot, or pay. Those stay yours.</li>
-          <li>Book a ticket for you, or improve your chances of getting one.</li>
+          <li>Enter an OTP or solve a captcha. Those stay yours, by design.</li>
+          <li>Choose your date, slot or ticket count, press Continue, or pay for anything.</li>
+          <li>Improve your chances of getting a ticket. It types faster, that is all.</li>
         </ul>
       </div>
 
-      <!-- The store listing links here as the support page, so the anchor has to land on
-           something that answers "a field did not fill, now what". -->
-      <div class="card" id="support">
-        <h2>If something goes wrong</h2>
-        <ul>
+      <div class="card">
+        <h2>How your details are kept</h2>
+        <ul class="marks yes">
           <li>
-            Open the extension, go to Settings and press <strong>Report a problem</strong>. It
-            writes out what the page looked like and which fields failed, leaving out names, ID
-            numbers, phone numbers and addresses, and shows you the whole report before anything is
-            sent.
+            Encrypted on this device with your own PIN, using the browser's Web Crypto. The PIN
+            itself is never stored.
           </li>
           <li>
-            Or write to <a href="mailto:twinntricks@gmail.com">twinntricks@gmail.com</a>. Please do
-            not put pilgrim details in the email.
+            A recovery key is shown once when you create the vault. It is the only way back in if
+            the PIN is forgotten.
+          </li>
+          <li>
+            Backups are encrypted files written only when you ask for one, to wherever you choose.
+          </li>
+          <li>
+            Three permissions and one website. Nothing else is requested, and no other page is read.
           </li>
         </ul>
+        <p style="margin-top: 0.85rem">
+          <a href="privacy/">Read the full privacy policy</a>
+        </p>
       </div>
 
-      <p><a href="privacy/">Read the privacy policy</a></p>
+      <div class="card accent">
+        <h2>Where it works</h2>
+        <p>
+          The official TTD site, ttdevasthanams.ap.gov.in, on the pilgrim details step of a darshan,
+          seva or accommodation booking. It is offered nowhere else.
+        </p>
+      </div>
 
       <p class="footer">
+        Something not filling? <a href="support/">Support and common questions</a>.<br />
         An independent third-party utility. Not affiliated with, operated by, or endorsed by
         Tirumala Tirupati Devasthanams.
       </p>

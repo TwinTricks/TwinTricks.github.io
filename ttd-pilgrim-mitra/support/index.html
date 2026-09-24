@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support · TTD Pilgrim Mitra</title>
+    <meta
+      name="description"
+      content="What to do when a field does not fill, how to send a problem report that carries no personal details, and answers to the questions people ask most."
+    />
+    <link rel="icon" href="../icon-128.png" />
+    <link rel="canonical" href="https://twintricks.github.io/ttd-pilgrim-mitra/support/" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../">
+          <img src="../icon-128.png" alt="" width="26" height="26" />
+          TTD Pilgrim Mitra
+        </a>
+        <nav>
+          <a href="./" aria-current="page">Support</a>
+          <a href="../privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <p class="crumb"><a href="../">TTD Pilgrim Mitra</a></p>
+      <h1>Support</h1>
+      <p class="lede">
+        Most problems are one of two things: the booking page changed shape, or the extension is
+        locked. Both are quick to sort out. If neither is it, send a report and it gets read.
+      </p>
+
+      <p class="section-title">A field did not fill</p>
+      <div class="card">
+        <ol class="steps">
+          <li>
+            <strong>Check the report it already gave you.</strong> After every run the extension
+            lists each field as verified, filled but unconfirmed, failed, or skipped. Only the
+            failures need your attention.
+          </li>
+          <li>
+            <strong>Press Retry failed.</strong> A field that was still loading when the run reached
+            it usually succeeds the second time.
+          </li>
+          <li>
+            <strong>Use Map field on anything still missing.</strong> It asks you to point at the
+            box on the page, and it remembers that box for next time. This is the fix when TTD has
+            renamed or moved a field.
+          </li>
+          <li>
+            <strong>Then send a problem report.</strong> That tells us the page changed, so the next
+            version recognises the field for everyone without anyone having to map it.
+          </li>
+        </ol>
+      </div>
+
+      <p class="section-title">Sending a problem report</p>
+      <div class="card">
+        <p>
+          Open the extension and press <strong>Report a problem</strong>. It sits in Settings, in
+          Help, and on the home screen straight after a fill that went wrong.
+        </p>
+        <p>
+          The report carries the shape of the page and which fields failed: counts, field names,
+          error messages. It leaves out names, ID numbers, phone numbers, email addresses and postal
+          addresses. You are shown the entire report before anything happens, and nothing leaves
+          your computer until you press Copy or Email.
+        </p>
+        <p>
+          If you type something into the notes box that looks like an ID or a phone number, it warns
+          you rather than sending it quietly.
+        </p>
+      </div>
+
+      <div class="card accent">
+        <h2>Writing in directly</h2>
+        <p>
+          <a href="mailto:twinntricks@gmail.com">twinntricks@gmail.com</a>. Please do not put
+          pilgrim names, ID numbers or phone numbers in the email. Nothing about a problem needs
+          them, and email is not a safe place to keep them.
+        </p>
+      </div>
+
+      <p class="section-title">Questions people ask</p>
+      <div class="qa">
+        <details>
+          <summary>I forgot my PIN. Can you reset it?</summary>
+          <div class="answer">
+            <p>
+              No one can, including us. The PIN never leaves your computer and is never stored, so
+              there is nothing on our side to reset against. Use the recovery key shown once when
+              you created the vault to set a new PIN.
+            </p>
+            <p>
+              Without that key the only way forward is a reset, which erases the saved pilgrims,
+              because the data cannot be read without one of the two. This is the cost of the
+              details being genuinely yours.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Will it book the ticket for me?</summary>
+          <div class="answer">
+            <p>
+              No, and it will not try. It fills the pilgrim details and stops. Choosing the date and
+              slot, the OTP, the captcha, pressing Continue and paying are all yours. It does not
+              improve your chances of getting a ticket either. It types the same details you would
+              have typed, faster and without a mistake.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>It says nothing is detected on the page.</summary>
+          <div class="answer">
+            <p>
+              It only offers itself on ttdevasthanams.ap.gov.in, on the pilgrim details step of a
+              booking. On the login page, the slot picker or the payment page there is nothing for
+              it to fill, which is deliberate.
+            </p>
+            <p>
+              If you are on the right step and it still sees nothing, reload the page. A tab that
+              was already open when the extension was installed or updated needs one reload before
+              the extension can reach it.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Does it work on my phone?</summary>
+          <div class="answer">
+            <p>
+              Not yet. Chrome on Android and iOS does not run extensions at all, so this is a
+              desktop tool. The pilgrim details you save do not sync to a phone either, since they
+              never leave the computer they were saved on.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What happens to my data if I reinstall Chrome?</summary>
+          <div class="answer">
+            <p>
+              It goes. The saved pilgrims live in this Chrome profile, so removing the profile, the
+              extension or Chrome itself takes them with it. Nothing is held on a server to restore
+              from.
+            </p>
+            <p>
+              Settings has an encrypted backup for exactly this. It writes a single
+              <strong>.ttdpbackup</strong> file, protected by your PIN, that you can keep wherever
+              you keep important files and import later.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Why does it ask to read the TTD site?</summary>
+          <div class="answer">
+            <p>
+              Because filling a form means reading it first: finding the name box, the ID box and
+              the row each pilgrim belongs in. That access is limited to the one TTD origin. No
+              other website is requested and no other page is read.
+            </p>
+            <p>
+              The full reasoning for each of the three permissions is in the
+              <a href="../privacy/">privacy policy</a>.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>I have twenty relatives to enter. Is there a faster way?</summary>
+          <div class="answer">
+            <p>
+              Settings takes a CSV. It writes out a template to start from, and when you bring the
+              filled sheet back it tells you which rows it could not read, by line number, instead
+              of refusing the whole file.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Which photo IDs does it support?</summary>
+          <div class="answer">
+            <p>
+              Aadhaar and passport, the two the TTD dropdown accepts, each checked against its own
+              shape so a typo is caught before the form sees it. Autofill sets the Photo ID Proof
+              dropdown to whichever one you saved before typing the number.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I get rid of everything?</summary>
+          <div class="answer">
+            <p>
+              Settings has Delete all data, which asks you to confirm rather than doing it on a
+              stray click. Removing the extension from Chrome also takes the vault with it. There is
+              no copy anywhere else to chase down.
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <p class="footer">
+        <a href="../">Home</a> · <a href="../privacy/">Privacy policy</a> ·
+        <a href="mailto:twinntricks@gmail.com">twinntricks@gmail.com</a><br />
+        An independent third-party utility. Not affiliated with, operated by, or endorsed by
+        Tirumala Tirupati Devasthanams.
+      </p>
+    </main>
+  </body>
+</html>
